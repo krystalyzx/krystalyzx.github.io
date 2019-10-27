@@ -1,4 +1,4 @@
-# Personal webpage built with Jekyll - [Demo](krystalyzx.github.io)  
+# Personal webpage built with Jekyll - [Demo](https://krystalyzx.github.io/)  
 ## Setup  
 - Install [Jekyll and Bundler](https://jekyllrb.com/docs/step-by-step/01-setup/)
 - cd into the project directory and run `bundle`
