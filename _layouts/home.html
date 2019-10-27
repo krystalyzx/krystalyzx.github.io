@@ -4,9 +4,8 @@ layout: default
 <div class="home-header-container">
         <img src="{{ site.url }}/{{ site.bg-img }}" style="width:100%;opacity: 0.9;">
         <div class="home-header">
-            <h1 class="title">{{ site.name }}</h1>
+            <h1 class="name">{{ site.name }}</h1>
             {% include sns.html %}
-            <h2 class="bio">{{ site.bio }}</h2>
         </div>
 </div>
 <div class="projects">
@@ -17,11 +16,12 @@ layout: default
         <div class="col-lg-8 col-md-10 mx-auto">
             <h1 style="margin-top: 15px;">Projects</h1> 
             <hr>
-            {% for p in site.projects %}
+            {% assign sortedPosts = site.projects | sort: 'id' | reverse %}
+            {% for p in sortedPosts %}
             <div class="project">
                 <img class="dot" src="{{ site.url }}/assets/dot.jpg">
                 <div class="project-details">
-                  <a class="ptitle" href="{{ p.purl }}">{{ p.title }}</a>
+                  <a class="project-title" href="{{ p.purl }}">{{ p.title }}</a>
                   <p>{{ p.content | markdownify }}</p>
                 </div>
                 <hr>
