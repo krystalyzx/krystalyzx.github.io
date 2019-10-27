@@ -1,5 +1,5 @@
 ---
 title: Distributed K-means
-purl: www.github.com
+purl: https://github.com/krystalyzx/DistributedKmeans
 ---
 Distributed K-means based on MapReduce. 
