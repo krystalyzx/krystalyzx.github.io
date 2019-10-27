@@ -16,11 +16,14 @@ layout: default
      
         <div class="col-lg-8 col-md-10 mx-auto">
             <h1 style="margin-top: 15px;">Projects</h1> 
+            <hr>
             {% for p in site.projects %}
             <div class="project">
-                <hr>
-                <a class="ptitle" href="{{ p.purl }}">{{ p.title }}</a>
-                <p>{{ p.content | markdownify }}</p>
+                <img class="dot" src="{{ site.url }}/assets/dot.jpg">
+                <div class="project-details">
+                  <a class="ptitle" href="{{ p.purl }}">{{ p.title }}</a>
+                  <p>{{ p.content | markdownify }}</p>
+                </div>
                 <hr>
             </div>
           {% endfor %}
